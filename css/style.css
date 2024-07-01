@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 99%;
+    margin: auto auto;
+    margin-top:1%;
+    /* margin-bottom:90%; */
+}
+/* .container2 {
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+} */
+
+header {
+    background-color: #a73b23;
+    color: white;
+    padding: 20px 0;
+    /* width: 20; */
+    text-align: center;
+}
+
+main {
+    /* margin: 20px; */
+    margin-bottom: 70px;
+}
+
+.course-card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+}
+
+.course-card h2 {
+    margin-top: 0%;
+    /* padding-bottom: ; */
+}
+#headhead 
+ {
+    color: white;
+    font: bold;
+    font-stretch:expanded;
+ }
+.read-more {
+    background-color: #f9441c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.read-more:hover {
+    background-color: #a73b23;
+}
+footer {
+    background-color: #a73b23;
+    color: white;
+    text-align: center;
+    padding: 10px 0; 
+    bottom: 0;
+    width: 100%;
+    
+    position: fixed;
+    left: 0; 
+    box-sizing: border-box; 
+}
+
+#foottext {
+    text-align: center;
+    size: 100px;
+    font-weight: bold;
+
+}
+
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
