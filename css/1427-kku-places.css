@@ -31,10 +31,10 @@ h3{
 
 li.popular{
     text-align: left;
-    border-style: dashed;
-    border-width: 3px;
-    color: aquamarine;
-    text-shadow: 1px 1px 1px red;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
     
 }
 
