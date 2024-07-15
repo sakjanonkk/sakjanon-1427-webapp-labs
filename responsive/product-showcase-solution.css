@@ -49,12 +49,12 @@ body, html {
     background-color: #dda0dd; 
     color: #fff; 
 }
-
+ 
 .product-grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     list-style: none;
-}
+} 
 
 .product{
     display: block;
@@ -69,6 +69,8 @@ body, html {
     .nav-item {
         border-bottom: 1px solid #ddd;
     }
+
+    
      
 }
 
@@ -77,13 +79,12 @@ body, html {
     .product-grid{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
-        list-style: none;
+        /* list-style: none; */
     }
 }
 
 @media (width<=767px){
     .navbar {
-        /* width:75%; */
         grid-template-columns: 1fr;
     }
 
@@ -94,7 +95,7 @@ body, html {
     .product-grid{
         display:flex;
         flex-direction: column;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         list-style: none;
     }
 }
