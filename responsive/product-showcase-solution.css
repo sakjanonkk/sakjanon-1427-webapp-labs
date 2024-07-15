@@ -39,15 +39,15 @@ body, html {
     align-items: center;
     text-align: center;
     padding: 15px 20px;
-    color: #4b0082; /* Indigo color for text */
+    color: #4b0082; 
     text-decoration: none;
-    font-size: 18px; /* Larger font size */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .nav-item:hover {
-    background-color: #dda0dd; /* Plum background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #dda0dd; 
+    color: #fff; 
 }
 
 .product-grid{
@@ -58,17 +58,17 @@ body, html {
 
 .product{
     display: block;
-    /* align-items: center; */
     text-align: center;
     padding-top: 20px;
     margin: 20px;
     border: 2px solid #c5c5c5;
-    /* box-shadow: inset; */
 }
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-      
+    .nav-item {
+        border-bottom: 1px solid #ddd;
+    }
      
 }
 
