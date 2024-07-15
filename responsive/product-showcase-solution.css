@@ -68,17 +68,12 @@ body, html {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-    .navbar {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-item {
-        width: 100%;
-        border-bottom: 1px solid #ddd;
-    }    
+      
+     
 }
 
 @media ( 768px <= width <= 1023px){
+    
     .product-grid{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
@@ -86,9 +81,19 @@ body, html {
     }
 }
 
-@media (min-width < 768px){
+@media (width<=767px){
+    .navbar {
+        /* width:75%; */
+        grid-template-columns: 1fr;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #ddd;
+    }
+    
     .product-grid{
-        display:grid;
+        display:flex;
+        flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
         list-style: none;
     }
