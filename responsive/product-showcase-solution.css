@@ -1,0 +1,96 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Light beige background */
+}
+.headtext{
+    margin:10px;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff; /* White background */
+    text-align:left;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+
+}
+
+.navbar {
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff; /* White background */
+    border-bottom: 2px solid #ddd; /* Light gray border */
+    text-align: center;
+
+}
+
+.nav-item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+    color: #4b0082; /* Indigo color for text */
+    text-decoration: none;
+    font-size: 18px; /* Larger font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-item:hover {
+    background-color: #dda0dd; /* Plum background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    list-style: none;
+}
+
+.product{
+    display: block;
+    /* align-items: center; */
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid #c5c5c5;
+    /* box-shadow: inset; */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .navbar {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }    
+}
+
+@media ( 768px <= width <= 1023px){
+    .product-grid{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+    }
+}
+
+@media (min-width < 768px){
+    .product-grid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+    }
+}
+
