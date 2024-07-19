@@ -183,6 +183,10 @@ h2,.heroheader{
         font-size: 14px;
     }
 
+    .header-img{
+        height: 300px;
+       }
+
     .hero {
         margin: 0 100px 200px 100px;
     }
@@ -203,7 +207,9 @@ h2,.heroheader{
     .header .text-header {
         font-size: 12px;
     }
-   
+   .header-img{
+    height: 250px;
+   }
     .hero {
         margin: 0 20px 200px 20px;
     }
