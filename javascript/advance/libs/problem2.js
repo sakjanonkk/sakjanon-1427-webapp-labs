@@ -4,8 +4,8 @@ function Book(title, author) {
 }
 
 var Library = {
-  books: [],
-  //add book func
+  books: [], //book
+  //added book func
   addBook: function (book) {
     this.books.push(book);
     var bookname = document.createElement("p");
