@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #avatar {
+        border: 5px solid blue;
+        border-radius: 50%;
+        width: 200px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <script>
+      // Function to fetch GitHub user information
+      async function fetchGitHubInfo(username) {
+        try {
+          const response = await fetch(
+            `https://api.github.com/users/${username}`
+          );
+          const data = await response.json();
+
+          // Handle case where 'name' is null or empty
+          const displayName = data.name ? data.name : data.login;
+
+          //show github info
+          document.getElementById(
+            "name"
+          ).innerHTML = `<a href="${data.html_url}" target="_blank">${displayName}</a>`;
+          document.getElementById("avatar").src = data.avatar_url;
+          document.getElementById("blog").innerHTML = data.blog;
+        } catch (error) {
+          console.error("Error fetching GitHub information:", error);
+        }
+      }
+
+      // Call the function
+      window.onload = function () {
+        const username = "sakjanonkk";
+        fetchGitHubInfo(username);
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="name"></h1>
+    <img id="avatar" alt="GitHub Avatar" style="width: 200px; height: 200px" />
+    <p>Portfolio: <a id="blog" href=""></a></p>
+  </body>
+</html>
