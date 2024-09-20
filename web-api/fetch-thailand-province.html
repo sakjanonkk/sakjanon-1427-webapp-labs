@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Req</title>
+    <script>
+      const apiUrl = "https://provinces-of-thailand.p.rapidapi.com/province/";
+
+      const options = {
+        method: "GET",
+
+        headers: {
+          "x-rapidapi-host": "provinces-of-thailand.p.rapidapi.com",
+          "x-rapidapi-key":
+            "974a18af2amsha1d3ecc5d47ce5fp155aa3jsncc88ce31d4ff",
+        },
+      };
+
+      fetch(apiUrl, options)
+        .then((response) => {
+          if (!response.ok) {
+            if (response.status === 404) {
+              throw new Error("Data not found");
+            } else if (response.status === 500) {
+              throw new Error("Server error");
+            } else {
+              throw new Error("Network response was not ok");
+            }
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const outputElement = document.getElementById("response");
+          const ol = document.createElement("ol");
+          data.forEach((item) => {
+            const li = document.createElement("li");
+            li.textContent = JSON.stringify(item.province_name).replace(
+              /"/g,
+              ""
+            );
+            ol.appendChild(li);
+          });
+          outputElement.appendChild(ol);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    </script>
+  </head>
+  <body>
+    <h2>List of Thailand provinces</h2>
+    <div id="response"></div>
+  </body>
+</html>
