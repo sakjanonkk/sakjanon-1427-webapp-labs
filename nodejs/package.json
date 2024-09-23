@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "type": "module",
+  "scripts": {
+    "calculator": "node calculator.mjs"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  }
+}
