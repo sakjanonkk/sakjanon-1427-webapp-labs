@@ -4,7 +4,7 @@ import axios from "axios";
 const app = express();
 const PORT = 3000;
 
-const GITHUB_API_URL = "https://api.github.com/users/sakjanonkk";
+const GITHUB_API_URL = "https://api.github.com/user";
 const TOKEN = "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";
 
 app.get("", async (req, res) => {
