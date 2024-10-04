@@ -9,7 +9,7 @@ function App() {
       {/* <h2 className=" font-bold ">My Github information</h2> */}
       <GitHubUsername username={userInfo.username} />
       <div className="flex justify-center">
-        <GitHubAvatar avatarURL={userInfo.avatarURL} size={400} />{" "}
+        <GitHubAvatar avatarURL={userInfo.avatarURL} />{" "}
       </div>
       <a
         className="underline underline-offset-1 pt-2 font-semibold text-blue-500"

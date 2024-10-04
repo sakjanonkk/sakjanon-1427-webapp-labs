@@ -19,14 +19,14 @@ export const GitHubUsername = (props) => {
 };
 
 export const GitHubAvatar = (props) => {
-  //   const size = props.size || 50;
+  const size = props.size || 400;
   return (
     <img
       className="pt-5 justify-center"
       src={props.avatarURL}
       alt="GitHub Avatar"
-      //   width={size}
-      //   height={size}
+      width={size}
+      height={size}
     />
   );
 };
